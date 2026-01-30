@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "Bash(gh repo view:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nInitial commit: NotionNext blog setup for GitHub Pages\n\n- Configure Next.js for static export with GitHub Pages support\n- Add basePath, assetPrefix, trailingSlash for GitHub Pages routing\n- Enable unoptimized images for static export mode\n- Create environment variable templates \\(.env.example\\)\n- Add GitHub Actions workflows:\n  - deploy.yml: Daily auto-sync + manual trigger deployment\n  - keep-alive.yml: Monthly job to prevent workflow disabling\n- Create .nojekyll for GitHub Pages compatibility\n- Configure Notion API integration variables\n\nReady for deployment after configuring Notion credentials.\nEOF\n\\)\")",
+      "Bash(git commit:*)"
+    ]
+  }
+}

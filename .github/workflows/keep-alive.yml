@@ -1,0 +1,13 @@
+name: Keep Repository Active
+
+on:
+  schedule:
+    - cron: '0 0 1 * *'  # 每月1号00:00 UTC运行，防止GitHub Actions定时任务被禁用
+  workflow_dispatch:
+
+jobs:
+  keep-alive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Keep workflow active
+        run: echo "Repository is active - $(date)"
